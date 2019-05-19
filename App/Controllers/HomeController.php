@@ -5,7 +5,7 @@ class HomeController extends Controller {
     public function __construct($method, $params)
     {
         parent::__construct($method, $params);
-        echo 'Home!Construct!';
+
     }
 
     public function init()
@@ -15,7 +15,8 @@ class HomeController extends Controller {
 
     public function index()
     {
-        echo 'From Home!index ';
+        return $this->view('home/home', true);
+
     }
 
     public function create()

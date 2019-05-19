@@ -70,7 +70,7 @@ class Bootstrap {
 
             'about'                 => 'AboutController@index',
             'about/show'            => 'AboutController@show',
-            'about/edit'         => 'AboutController@edit',
+            'about/edit'            => 'AboutController@edit',
 
             'post'                  => 'PostController@index',
             'post/3/edit'           => 'PostController@edit'
