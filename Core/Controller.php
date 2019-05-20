@@ -10,7 +10,7 @@ abstract class Controller {
 
         $this->method = $method;
         $this->params = $params;
-        
+
     }
 
     public function loadMethod(){

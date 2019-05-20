@@ -68,6 +68,9 @@ class Bootstrap {
             'home/create'           => 'HomeController@create',
             'home/edit/3/4/edit'    => 'HomeController@edit',
 
+            'user/add'              =>  'UserController@add',
+            'users/delete'          =>  'UserController@delete',
+
             'about'                 => 'AboutController@index',
             'about/show'            => 'AboutController@show',
             'about/edit'            => 'AboutController@edit',
@@ -120,7 +123,7 @@ class Bootstrap {
                     return false;
                 }
             } else {
-                echo '<h1>Base controller of '. $controller .' not exist!</h1>';
+                echo '<h1>Model controller of '. $controller .' not exist!</h1>';
                 return false;
             }
         } else {

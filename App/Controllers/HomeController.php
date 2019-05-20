@@ -5,7 +5,6 @@ class HomeController extends Controller {
     public function __construct($method, $params)
     {
         parent::__construct($method, $params);
-
     }
 
     public function init()
@@ -15,7 +14,12 @@ class HomeController extends Controller {
 
     public function index()
     {
-        return $this->view('home/home', true);
+
+        $userModel = new User();
+
+        $users = $userModel->all();
+
+        return $this->view('home/home', true, compact('users'));
 
     }
 
